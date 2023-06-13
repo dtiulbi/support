@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title  -->
-  <title>Bimbingan dashboard</title>
+  <title>Issues | Support HelpDesk</title>
 
   <!-- Development css (used in all pages) -->
   <link rel="stylesheet" id="stylesheet" href="src/css/style.css">  <!-- Production css (used in all pages) -->
@@ -342,35 +342,65 @@
           <!-- row -->
           <div class="flex flex-wrap flex-row">
             <div class="flex-shrink max-w-full px-4 w-full">   
-              <p class="text-xl font-bold mt-3 mb-5">Buat Bimbingan Baru</p>
+              <p class="text-xl font-bold mt-3 mb-5">Buat Issues Baru</p>
             </div>                                                 
             <div class="flex-shrink max-w-full px-4 w-full mb-6">
               <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg h-full">
                 <form id="issuesform" action="" method="POST" class="flex flex-wrap flex-row -mx-4">
-                    <div class="flex-shrink max-w-full px-4 w-full md:w-1/2 mb-4">
-                      <label for="inputtittle" class="inline-block mb-2">Tittle</label>
+                    <div class="flex-shrink max-w-full px-4 w-full mb-4">
+                      <label for="inputtittle" class="inline-block mb-2">Judul Pengaduan</label>
                       <input type="text" class="w-full leading-5 relative py-2 px-4 rounded text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" id="inputtittle">
                     </div>
-                    <div class="flex-shrink max-w-full px-4 w-full md:w-1/2 mb-4">
-                      <label for="inputbody" class="inline-block mb-2">Body</label>
-                      <input type="text" class="w-full leading-5 relative py-2 px-4 rounded text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" id="inputbody">
+                    
+                    
+                    <div class="flex-shrink max-w-full px-4 w-full  mb-4">
+                      <label for="inputassigness" class="inline-block mb-2">Penerima Tugas</label>
+                      <select class="w-full leading-5 relative py-2 px-4 rounded text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" id="inputassigness" >
+                        <option selected disabled="">Pilih Terlebih dahulu</option>
+                        <option value="christyuda">Christian Yuda Pratama | Layanan</option>
+                        <option value="rofinafiin">Rofi Nafiis Zain | ITeung</option>
+                        <option value="valenrio66">Valen Rionald | ITeung</option>
+                        <option value="Bachtiar21">Bachtiar Ramadhan</option>
+                      </select>
                     </div>
+
+                
+                    
                     <div class="flex-shrink max-w-full px-4 w-full md:w-1/2 mb-4">
-                      <label for="inputassigness" class="inline-block mb-2">Assignees</label>
-                      <input type="text" class="w-full leading-5 relative py-2 px-4 rounded text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" id="inputassigness">
-                    </div>
-                    <div class="flex-shrink max-w-full px-4 w-full md:w-1/2 mb-4">
-                      <label for="inputmilestone" class="inline-block mb-2">Milestone</label>
+                      <label for="inputmilestone" class="inline-block mb-2">Pencapaian</label>
                       <input type="text" class="w-full leading-5 relative py-2 px-4 rounded text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" id="inputmilestone">
                     </div>
                     <div class="flex-shrink max-w-full px-4 w-full md:w-1/2 mb-4">
-                      <label for="inputlabels" class="inline-block mb-2">Labels</label>
-                      <input type="text" class="w-full leading-5 relative py-2 px-4 rounded text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" id="inputlabels">
+                      <label for="inputlabels" class="inline-block mb-2">Tag Pengaduan Aplikasi</label>
+                      <select class="w-full leading-5 relative py-2 px-4 rounded text-gray-800 bg-white border border-gray-300 focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" id="inputlabels">
+                        <option selected disabled="">Pilih Terlebih dahulu</option>
+                        <option value="alpha">Alpha ULBI</option>
+                        <option value="Dias">Dias ULBI</option>
+                        <option value="sip">SIP </option>
+                        <option value="rtm">RTM ULBI </option>
+                        <option value="iteung">ITeung </option>
+                        <option value="kebutuhan lainnya">Kebutuhan Lainnya </option>
+                      </select>
                     </div>
+
+                    <div class="flex-shrink max-w-full px-4 w-full">
+                      <label for="inputbody" class="inline-block mb-2">Body</label>
+                      <textarea class="w-full h-32 py-2 px-4 rounded text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" id="inputbody"></textarea>
+                    </div>
+                    
                     <div class="flex-shrink max-w-full px-4 w-full">
                       <button id="submitButton" class="py-2 px-4 mb-3 block lg:inline-block text-center rounded leading-5 text-gray-100 bg-indigo-500 border border-indigo-500 hover:text-white hover:bg-indigo-600 hover:ring-0 hover:border-indigo-600 focus:bg-indigo-600 focus:border-indigo-600 focus:outline-none focus:ring-0">Tambah Bimbingan <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="inline-block ltr:ml-1 rtl:mr-1 bi bi-plus-lg" viewBox="0 0 16 16" ><path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"></path></svg></button>
                     </div>
                   </form>
+
+                      <!-- <div class="flex-shrink max-w-full px-4 w-full md:w-1/2 mb-4">
+                      <label for="inputassigness" class="inline-block mb-2">Assignees</label>
+                      <select class="w-full leading-5 relative py-2 px-4 rounded text-gray-800 bg-white border border-gray-300 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-300 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600" id="inputassigness">
+                        <option value="christyuda">Christian Yuda Pratama | Layanan</option>
+                        <option value="Bachtiar21">Bachtiar Ramadhan</option>
+                        <option value="user2">User 2</option>
+                      </select>
+                    </div> -->
 
                 <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden flex items-center justify-center p-4 overflow-x-hidden overflow-y-auto">
                   <div class="relative w-full max-w-md">
