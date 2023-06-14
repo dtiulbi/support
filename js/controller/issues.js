@@ -4,7 +4,7 @@ import Swal from "https://cdn.skypack.dev/sweetalert2@11.1.2";
 
 document.addEventListener('DOMContentLoaded', () => {
     const octokit = new Octokit({
-      auth: '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'
+      auth: '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'
     });
 
     const form = document.getElementById('issuesform');
