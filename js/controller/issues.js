@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
       
 
       try {
-        const response = await octokit.request('POST /repos/dtiulbi/questionstik/issues', {
+        const response = await octokit.request('POST /repos/dtiulbi/question-ticketing/issues', {
           owner: 'dtiulbi',
-          repo: 'questionstik',
+          repo: 'question-ticketing',
           title,
           assignees,
           milestone,
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
         console.log('Issue created:', response);
-        showModal('Pengajuan DiProses', response);
+        showModal('Pengajuan Tiket Layanan Akan Proses', response);
 
       } catch (error) {
         console.error('Failed to create issue:', error);
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     Swal.fire({
       icon: 'error',
       title: 'Oops...',
-      text: 'Gagal Mengirim Pengajuan Pastikan Sudah Diisi Semua',
+      text: 'Gagal Mengirim Pengajuan',
     }).then(() => {
       location.reload();
     });
