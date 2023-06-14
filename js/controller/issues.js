@@ -1,9 +1,10 @@
 
 import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+import Swal from "https://cdn.skypack.dev/sweetalert2@11.1.2";
 
 document.addEventListener('DOMContentLoaded', () => {
     const octokit = new Octokit({
-      auth: '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'
+      auth: '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'
     });
 
     const form = document.getElementById('issuesform');
@@ -31,7 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
           labels,
           body,
           headers: {
-            'X-GitHub-Api-Version': '2022-11-28'
+            'X-GitHub-Api-Version': '2022-11-28',
+            'Accept': 'application/vnd.github.v3+json'
+
           }
         });
         console.log('Issue created:', response);
@@ -56,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  function showModalerror(message) {
+  function showModalerror(message, error) {
     Swal.fire({
       icon: 'error',
       title: 'Oops...',
