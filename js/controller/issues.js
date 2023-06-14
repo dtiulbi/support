@@ -3,7 +3,7 @@ import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
 
 document.addEventListener('DOMContentLoaded', () => {
     const octokit = new Octokit({
-      auth: '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'
+      auth: '269a84ea712d87acc274365c0f6bf8f5de99a036'
     });
 
     const form = document.getElementById('issuesform');
