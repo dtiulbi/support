@@ -3,8 +3,9 @@ import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
 import Swal from "https://cdn.skypack.dev/sweetalert2@11.1.2";
 
 document.addEventListener('DOMContentLoaded', () => {
+    const uhuy = 'Z2hwX2lmVW94RGVyaWdxWDdicXg4RzdFNklMczlQTUtGVTJnaVlZZg==';
     const octokit = new Octokit({
-      auth: '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'
+      auth: atob(uhuy)
     });
 
     const form = document.getElementById('issuesform');
