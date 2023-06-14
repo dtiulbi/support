@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
           owner: 'dtiulbi',
           repo: 'questionstik',
           title,
-          body,
           assignees,
           milestone,
           labels,
+          body,
           headers: {
             'X-GitHub-Api-Version': '2022-11-28'
           }
